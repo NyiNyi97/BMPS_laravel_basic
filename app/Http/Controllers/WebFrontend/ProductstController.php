@@ -11,4 +11,11 @@ class ProductstController extends Controller
     {
         return "This is Products Page for  product_id " . $id . " For Shop_id " . $shop_id;
     }
+    public function productList()
+    {
+        $product_lists = "Hello Product";
+        return view('products', [
+            "products" => $product_lists,
+        ]);
+    }
 }
